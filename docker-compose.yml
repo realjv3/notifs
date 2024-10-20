@@ -1,0 +1,8 @@
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    image: cust.io-api
+    ports:
+      - 8080:8080
