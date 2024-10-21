@@ -23,13 +23,19 @@ func main() {
 	}
 
 	// Initialize the web framework
-	r := gin.New()
+	r := gin.Default()
 	err = r.SetTrustedProxies(nil)
 	if err != nil {
 		fmt.Println(err)
 		return
 	} // Hide trusted proxies warning
-	r.Use(cors.Default())
+	config := cors.DefaultConfig()
+	config.AllowOrigins = []string{"http://localhost:3000"}
+	config.AllowCredentials = true
+	config.AddAllowHeaders("Authorization")
+	r.Use(cors.New(config))
+	r.Use(gin.Logger())
+	r.Use(gin.Recovery())
 
 	s := auth.NewService(db, r)
 
