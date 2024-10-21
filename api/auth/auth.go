@@ -3,7 +3,7 @@ package auth
 import (
 	"fmt"
 
-	"github.com/realjv3/homework/users"
+	"github.com/realjv3/notifs/users"
 
 	"github.com/gin-gonic/gin"
 	"github.com/jmoiron/sqlx"

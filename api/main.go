@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/realjv3/homework/auth"
-	"github.com/realjv3/homework/notifications"
-	"github.com/realjv3/homework/users"
+	"github.com/realjv3/notifs/auth"
+	"github.com/realjv3/notifs/notifications"
+	"github.com/realjv3/notifs/users"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"

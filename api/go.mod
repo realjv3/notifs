@@ -1,4 +1,4 @@
-module github.com/realjv3/homework
+module github.com/realjv3/notifs
 
 go 1.22.3
 

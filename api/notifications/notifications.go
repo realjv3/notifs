@@ -1,7 +1,7 @@
 package notifications
 
 import (
-	"github.com/realjv3/homework/users"
+	"github.com/realjv3/notifs/users"
 
 	"github.com/jmoiron/sqlx"
 )
